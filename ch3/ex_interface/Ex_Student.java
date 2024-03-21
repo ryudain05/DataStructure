@@ -1,4 +1,4 @@
-package ch3;
+package ch3.ex_interface;
 
 
 //상속 구현 예제

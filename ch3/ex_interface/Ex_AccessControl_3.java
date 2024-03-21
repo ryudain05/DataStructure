@@ -1,4 +1,4 @@
-package ch3;
+package ch3.ex_interface;
 
 public class Ex_AccessControl_3 {
     public static void main(String[] args) {

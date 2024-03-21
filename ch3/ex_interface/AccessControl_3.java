@@ -1,4 +1,4 @@
-package ch3;
+package ch3.ex_interface;
 
 
 //접근 제어자를 사용한 클래스 예제(1)

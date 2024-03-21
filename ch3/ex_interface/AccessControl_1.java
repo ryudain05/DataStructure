@@ -1,4 +1,4 @@
-package ch3;
+package ch3.ex_interface;
 
 //접근 제어자를 사용하지 않는 클레스 예제(1)
 class AccessControl_1 {
