@@ -96,17 +96,18 @@ public class IntegerArrayList implements IntegerListInterFace {
 
     @Override
     public int len() {
-        return 0;
+        return numItems;
     }
 
     @Override
     public boolean isEmpty() {
-        return false;
+        if(numItems == 0) return true;
+        else return false;
     }
 
     @Override
     public void clear() {
-
+        numItems = 0;
     }
 
     public void printList() {
