@@ -60,6 +60,7 @@ public class ListMain {
             }
         }
         System.out.println(")");
+        System.out.println();
 
 //
 //   L = (빨강, 주황, 노랑, 초록, 파랑, 남색, 보라)를 연결리스트로 만들고 출력하기
