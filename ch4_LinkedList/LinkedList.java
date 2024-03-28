@@ -23,11 +23,11 @@ public class LinkedList<E> implements ListInterface<E> {
         Node<E> prevNode = head; // 더미 헤드
         while (prevNode.next != null) {
             prevNode = prevNode.next;
-
-            Node<E> newNode = new Node(item, null);
-            prevNode.next = newNode;
-            numItems++;
         }
+        Node<E> newNode = new Node(item, null);
+        prevNode.next = newNode;
+        numItems++;
+
     }
 
     public E remove(int index) {
@@ -36,7 +36,7 @@ public class LinkedList<E> implements ListInterface<E> {
             Node<E> currNode = prevNode.next;
             prevNode.next = currNode.next;
             numItems--;
-            return (E) currNode.item;
+            return currNode.item;
         } else
             return null;
     }
