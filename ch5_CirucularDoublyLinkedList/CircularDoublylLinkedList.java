@@ -1,6 +1,7 @@
 package ch5_CirucularDoublyLinkedList;
 
 import ch4_LinkedList.ListInterface;
+import ch4_LinkedList.Node;
 
 public class CircularDoublylLinkedList<E> implements ListInterface<E> {
     private BidirectionalNode<E> head;
@@ -105,6 +106,10 @@ public class CircularDoublylLinkedList<E> implements ListInterface<E> {
     public void clear() {
         numItems = 0;
         head.next = head.prev = head;
+    }
+
+    @Override
+    public void printAll() {
     }
 
     ///////////////////////////////////////////////////////////////////////

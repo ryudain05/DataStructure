@@ -16,7 +16,9 @@ public class LinkedList<E> implements ListInterface<E> {
             Node<E> newNode = new Node(item, prevNode.next);
             prevNode.next = newNode;
             numItems++;
-        } else System.out.println("오류");
+        } else {
+            System.out.println("오류");
+        }
     }
 
     public void append(E item) {
@@ -37,8 +39,9 @@ public class LinkedList<E> implements ListInterface<E> {
             prevNode.next = currNode.next;
             numItems--;
             return currNode.item;
-        } else
+        } else {
             return null;
+        }
     }
 
     public boolean removeItem(E x) {
@@ -58,8 +61,9 @@ public class LinkedList<E> implements ListInterface<E> {
     public E get(int index) {
         if (index >= 0 && index <= numItems - 1) {
             return getNode(index).item;
-        } else
+        } else {
             return null;
+        }
     }
 
     public Node<E> getNode(int index) {
@@ -86,8 +90,9 @@ public class LinkedList<E> implements ListInterface<E> {
         Node<E> currNode = head;
         for (int i = 0; i <= numItems - 1; i++) {
             currNode = currNode.next;
-            if (((Comparable) (currNode.item)).compareTo(x) == 0)
+            if (((Comparable) (currNode.item)).compareTo(x) == 0) {
                 return i;
+            }
         }
 
         return NOT_FOUND;
@@ -112,9 +117,24 @@ public class LinkedList<E> implements ListInterface<E> {
         while (currNode.next != null) {
             currNode = currNode.next;
             System.out.print(currNode.item);
-            if (currNode.next != null) System.out.print(", ");
+            if (currNode.next != null) {
+                System.out.print(", ");
+            }
+
         }
         System.out.println(" }");
     }
 
+    public void printAll() { // 이 함수를 추가함. printList와 동일한 함수임.
+        System.out.print("List = {");
+        Node<E> currNode = head;
+        while (currNode.next != null) {
+            currNode = currNode.next;
+            System.out.print(currNode.item);
+            if (currNode.next != null) {
+                System.out.print(", ");
+            }
+            System.out.println(" }");
+        }
+    }
 }
