@@ -4,7 +4,7 @@ public class ArrayStackDemo {
 
     public static void main(String[] args) {
         System.out.println("Array Stack Demo!");
-        ArrayStack<Integer> s = new ArrayStack<>();
+        ArrayStack<Integer> s = new ArrayStack<>(10);
         s.push(1);
         s.push(2);
         s.push(3);
