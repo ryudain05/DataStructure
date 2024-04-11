@@ -1,4 +1,4 @@
-package ch6_Postfix;
+package ch6_Postfix.Postfix;
 
 import ch5_CirucularDoublyLinkedList.ArrayStack;
 
