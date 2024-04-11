@@ -72,7 +72,7 @@ public class ArrayQueue<E> implements QueueInterface<E> {
         System.out.print("PrintAll: ");
         for(int i = 0; i < numItems; i++) {
             System.out.print(queue[j] + " ");
-            j++;
+            j = (j + 1) % queue.length; //순환 구조를 고려한 인덱스 증가
         }
         System.out.println();
     }
