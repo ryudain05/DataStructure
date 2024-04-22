@@ -8,10 +8,10 @@ public class ArrayQueue<E> implements QueueInterface<E> {
     private final E ERROR = null;  // 임의의 에러 값
 
     public ArrayQueue() { // 생성자 1
-        queue = (E[]) new Object[DEFAULT_CAPACITY];
+        queue = (E[]) new Object[DEFAULT_CAPACITY]; //array size
         front = 0;
         tail = DEFAULT_CAPACITY - 1;
-        numItems = 0;
+        numItems = 0; //원소 값 check를 위한 변수
     }
 
     public ArrayQueue(int n) { // 생성자 2
