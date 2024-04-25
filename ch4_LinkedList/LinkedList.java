@@ -29,7 +29,6 @@ public class LinkedList<E> implements ListInterface<E> {
         Node<E> newNode = new Node(item, null);
         prevNode.next = newNode;
         numItems++;
-
     }
 
     public E remove(int index) {
@@ -46,8 +45,9 @@ public class LinkedList<E> implements ListInterface<E> {
 
     public boolean removeItem(E x) {
         Node<E> currNode = head;
+        Node<E> prevNode;
         for (int i = 0; i < numItems; i++) {
-            Node<E> prevNode = currNode;
+            prevNode = currNode;
             currNode = currNode.next;
             if (((Comparable) (currNode.item)).compareTo(x) == 0) {
                 prevNode.next = currNode.next;

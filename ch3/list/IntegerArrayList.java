@@ -17,9 +17,9 @@ public class IntegerArrayList implements IntegerListInterFace {
 
     @Override
     public void add(int k, Integer x) {
-        if (numItems >= item.length || k < 0 || k > numItems)
+        if (numItems >= item.length || k < 0 || k > numItems) {
             return;
-        else {
+        } else {
             for (int i = numItems - 1; i >= k; i--) {
                 item[i + 1] = item[i];
             }
@@ -30,9 +30,9 @@ public class IntegerArrayList implements IntegerListInterFace {
 
     @Override
     public void append(Integer x) {
-        if (numItems >= item.length)
+        if (numItems >= item.length) {
             return;
-        else {
+        } else {
             item[numItems] = x;
             numItems++;
         }
@@ -59,8 +59,9 @@ public class IntegerArrayList implements IntegerListInterFace {
         while (k < numItems && item[k] != x) {
             k++;
         }
-        if (k == numItems) return false;
-        else {
+        if (k == numItems) {
+            return false;
+        } else {
             for (int i = k; i < numItems - 1; i++) {
                 item[i] = item[i + 1];
             }
@@ -72,26 +73,34 @@ public class IntegerArrayList implements IntegerListInterFace {
 
     @Override
     public Integer get(int i) {
-        if (i >= 0 && i <= numItems - 1)
+        if (i >= 0 && i <= numItems - 1) {
             return item[i];
-        else
+        } else {
             return null;
+        }
     }
 
     @Override
     public void set(int i, Integer x) {
-        if (i >= 0 && i <= numItems - 1)
+        if (i >= 0 && i <= numItems - 1) {
             item[i] = x;
+        }
     }
 
     @Override
     public int indexOf(Integer x) {
         int i = 0;
-        while (i < numItems && item[i] != x) {
-            i++;
+//        while (i < numItems && item[i] != x) {
+//            i++;
+//        }
+//        if (i == numItems) return -1;
+//        else return i;
+        for (i = 0; i < numItems; i++) {
+            if (((Comparable) item[i]).compareTo(x) == 0) {
+                return i;
+            }
         }
-        if (i == numItems) return -1;
-        else return i;
+        return -1;
     }
 
     @Override
@@ -101,8 +110,11 @@ public class IntegerArrayList implements IntegerListInterFace {
 
     @Override
     public boolean isEmpty() {
-        if(numItems == 0) return true;
-        else return false;
+        if (numItems == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
@@ -112,7 +124,9 @@ public class IntegerArrayList implements IntegerListInterFace {
 
     public void printList() {
         System.out.print("List = { ");
-        for (int i = 0; i < numItems - 1; i++) System.out.print(item[i] + ", ");
+        for (int i = 0; i < numItems - 1; i++) {
+            System.out.print(item[i] + ", ");
+        }
         System.out.println(item[numItems - 1] + " )");
     }
 
