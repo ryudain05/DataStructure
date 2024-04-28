@@ -89,13 +89,12 @@ public class IntegerArrayList implements IntegerListInterFace {
 
     @Override
     public int indexOf(Integer x) {
-        int i = 0;
 //        while (i < numItems && item[i] != x) {
 //            i++;
 //        }
 //        if (i == numItems) return -1;
 //        else return i;
-        for (i = 0; i < numItems; i++) {
+        for (int i = 0; i < numItems; i++) {
             if (((Comparable) item[i]).compareTo(x) == 0) {
                 return i;
             }

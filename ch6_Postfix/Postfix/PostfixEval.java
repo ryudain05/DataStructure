@@ -24,7 +24,6 @@ public class PostfixEval {
                 } else {
                     stack.push(ch - '0');
                 }
-                ;
                 digitPreviously = true;
             } else if (isOperator(ch)) {
                 A = stack.pop();

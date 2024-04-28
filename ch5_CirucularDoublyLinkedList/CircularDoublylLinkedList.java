@@ -1,7 +1,6 @@
 package ch5_CirucularDoublyLinkedList;
 
 import ch4_LinkedList.ListInterface;
-import ch4_LinkedList.Node;
 
 public class CircularDoublylLinkedList<E> implements ListInterface<E> {
     private BidirectionalNode<E> head;
