@@ -13,7 +13,7 @@ public class LinkedQueue<E> implements QueueInterface<E> {
 
     // [알고리즘 7-7] 구현: 큐에 원소 삽입하기
     public void enqueue(E newItem) {
-        Node<E> newNode = new Node<>(newItem);
+        Node<E> newNode = new Node(newItem);
         if (isEmpty()) {
             newNode.next = newNode;
             tail = newNode;

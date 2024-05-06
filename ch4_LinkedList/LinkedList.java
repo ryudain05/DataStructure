@@ -13,7 +13,7 @@ public class LinkedList<E> implements ListInterface<E> {
     public void add(int index, E item) {
         if (index >= 0 && index <= numItems) {
             Node<E> prevNode = getNode(index - 1);
-            Node<E> newNode = new Node(item, prevNode.next);
+            Node<E> newNode = new Node<>(item, prevNode.next);
             prevNode.next = newNode;
             numItems++;
         } else {
@@ -49,7 +49,7 @@ public class LinkedList<E> implements ListInterface<E> {
         for (int i = 0; i < numItems; i++) {
             prevNode = currNode;
             currNode = currNode.next;
-            if (((Comparable) (currNode.item)).compareTo(x) == 0) {
+            if (((Comparable) currNode.item).compareTo(x) == 0) {
                 prevNode.next = currNode.next;
                 numItems--;
                 return true;
