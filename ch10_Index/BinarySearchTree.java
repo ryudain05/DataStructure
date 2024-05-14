@@ -28,6 +28,8 @@ public class BinarySearchTree implements IndexInterface<TreeNode> {
         return tNode;
     }
 
+
+
     /////////////////////////////////////////////////
     public void printPreOrder() {
         prPreOrder(root);
@@ -43,4 +45,7 @@ public class BinarySearchTree implements IndexInterface<TreeNode> {
 
         }
     }
+
+
+
 } // 코드 10-3
