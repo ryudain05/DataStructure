@@ -6,6 +6,25 @@ import ch10_Index.TreeNode;
 public class BinarySearchTreeDemo {
     static BinarySearchTree bst1 = new BinarySearchTree();
     public static void main(String[] args) {
+
+        System.out.println("Binary Search Tree!");
+        bst1.insert(8);
+        bst1.insert(3);
+        bst1.insert(14);
+        bst1.insert(2);
+        bst1.insert(5);
+        bst1.insert(11);
+        bst1.insert(16);
+        bst1.insert(4);
+        bst1.insert(6);
+        bst1.insert(7);
+        bst1.insert(13);
+        bst1.insert(20);
+        bst1.delete(4);
+        bst1.delete(5);
+        bst1.delete(16);
+        bst1.printPreOrder();
+
         System.out.println("Binary Search Tree!");
         bst1.insert(10);
         bst1.insert(20);
