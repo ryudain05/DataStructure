@@ -120,7 +120,7 @@ public class AVLTree implements IndexInterface<AVLNode> {
     }
 
     public void clear() {
-
+        root = NIL;
     }
 
     /////////////////////1111

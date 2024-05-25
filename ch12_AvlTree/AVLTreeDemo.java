@@ -34,5 +34,19 @@ public class AVLTreeDemo {
         avl.insert(20);
         avl.insert(10);
         avl.printPreOrder();
+
+        System.out.println("isEmpty(): " + avl.isEmpty());
+
+        avl.clear();
+        avl.insert(60);
+        avl.insert(40);
+        avl.insert(70);
+        avl.insert(30);
+        avl.insert(50);
+        avl.insert(20);
+        avl.insert(10);
+        avl.insert(5);
+        avl.printPreOrder();
+
     }
 }
