@@ -1,6 +1,6 @@
 package ch13_Graph;
 
 public class GraphNode {
-    int vertex;
-    GraphNode link;
+    public int vertex;
+    public GraphNode link;
 }
