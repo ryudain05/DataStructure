@@ -28,7 +28,7 @@ public class AdjListBfsDfs {
     public void printAdjList() {
         GraphNode gNode = new GraphNode();
         for (int i = 0; i < totalV; i++) {
-            System.out.printf("Inlt 정점%c의 인접리스트 ", i + 65);
+            System.out.printf("\n\t 정점%c의 인접리스트 ", i + 65);
             gNode = head[1];
             while (gNode != null) {
                 System.out.printf("=> %c", gNode.vertex + 65);
