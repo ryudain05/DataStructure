@@ -16,9 +16,8 @@ public class GraphDemo {
         MG1.insertEdge(3, 2);
         MG1.insertEdge(3, 1);
         MG1.insertEdge(3, 0);
-        System.out.println("in 그래프 MG1의 인접 행렬 : ");
+        System.out.println("\n 그래프 MG1의 인접 행렬 : ");
         MG1.printMatrix();
-        System.out.println();
         System.out.println();
 
         //인접 리스트로 구현한 그래프 실습
@@ -33,7 +32,7 @@ public class GraphDemo {
         LG1.insertEdge(3, 2);
         LG1.insertEdge(3, 1);
         LG1.insertEdge(3, 0);
-        System.out.printf("In 그래프 LG1의 인접 리스트 : ");
+        System.out.printf("\n 그래프 LG1의 인접 리스트 : ");
         LG1.printAdjList();
         System.out.println();
         System.out.println();
@@ -59,7 +58,7 @@ public class GraphDemo {
         MG2.insertEdge(6, 3);
         MG2.insertEdge(6, 4);
         MG2.insertEdge(6, 5);
-        System.out.println("in 그래프 MG2의 인접 행렬 : ");
+        System.out.println("\n 그래프 MG2의 인접 행렬 : ");
         MG2.printMatrix();
         System.out.println();
         System.out.println();
@@ -82,7 +81,7 @@ public class GraphDemo {
         LG2.insertEdge(6, 3);
         LG2.insertEdge(6, 4);
         LG2.insertEdge(6, 5);
-        System.out.printf("In 그래프 LG2의 인접 리스트 : ");
+        System.out.printf("\n 그래프 LG2의 인접 리스트 : ");
         LG2.printAdjList();
 
 
