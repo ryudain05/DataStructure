@@ -1,4 +1,4 @@
-package ch13_Graph;
+package ch12_Graph;
 
 public class GraphDemo {
     public static void main(String[] args) {

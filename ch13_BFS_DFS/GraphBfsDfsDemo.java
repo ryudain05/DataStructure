@@ -1,6 +1,6 @@
-package ch14_BFS_DFS;
+package ch13_BFS_DFS;
 
-import ch13_Graph.AdjMatrix;
+import ch12_Graph.AdjMatrix;
 
 public class GraphBfsDfsDemo {
     public static void main(String[] args) {

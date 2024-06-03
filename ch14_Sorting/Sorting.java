@@ -1,4 +1,4 @@
-package ch15_Sorting;
+package ch14_Sorting;
 
 public class Sorting {
     int A[];

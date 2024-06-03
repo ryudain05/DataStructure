@@ -1,6 +1,6 @@
-package ch14_BFS_DFS;
+package ch13_BFS_DFS;
 
-import ch13_Graph.GraphNode;
+import ch12_Graph.GraphNode;
 import ch5_CirucularDoublyLinkedList.LinkedStack;
 import ch7_LikedQueue.LinkedQueue;
 
