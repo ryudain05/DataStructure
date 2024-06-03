@@ -38,4 +38,40 @@ public class Sorting {
         }
         System.out.println();
     } // 코드 9-1
+
+    // [알고리즘 9-3] 구현: 버블 정렬
+    public void bubbleSort() {
+        int tmp = 0;
+        boolean swapped;
+        for (int last = A.length - 1; last >= 2; last--) {
+            swapped = false;
+            for (int i = 0; i <= last - 1; i++) {
+                if (A[i] > A[i + 1]) {
+                    tmp = A[i];
+                    A[i] = A[i + 1];
+                    A[i + 1] = tmp;
+                    swapped = true;
+                }
+                if (swapped == false) {
+                    break;
+                }
+                printArray(A);
+            }
+            tmp = tmp;
+        }
+    }
+
+    // 알고리즘[9-4] 구현: 삽입 정렬
+    public void insertionSort() {
+        for(int i= 1; i<=A.length-1; i++) {
+            int loc = i-1;
+            int newItem = A[i];
+            while (loc >= 0 && newItem < A[loc]){
+                A[loc + 1] = A[loc];
+                loc--;
+            }
+            A[loc + 1] = newItem;
+            printArray(A);
+        }
+    }
 }
