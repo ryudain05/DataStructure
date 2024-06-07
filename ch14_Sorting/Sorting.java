@@ -12,7 +12,7 @@ public class Sorting {
         int k;
         int tmp;
         for (int last = A.length - 1; last >= 1; last--) {
-            k = theLargest(last); // A[0... Last] 중 가장 큰 수 ALk] 찾기
+            k = theLargest(last);        // A[0...last] 중 가장 큰 수 A[k] 찾기
             tmp = A[k];
             A[k] = A[last];
             A[last] = tmp;
@@ -52,21 +52,22 @@ public class Sorting {
                     A[i + 1] = tmp;
                     swapped = true;
                 }
-                if (swapped == false) {
-                    break;
-                }
-                printArray(A);
             }
+            if (swapped == false) {
+                break;
+            }
+            printArray(A);
+
             tmp = tmp;
         }
     }
 
     // 알고리즘[9-4] 구현: 삽입 정렬
     public void insertionSort() {
-        for(int i= 1; i<=A.length-1; i++) {
-            int loc = i-1;
+        for (int i = 1; i <= A.length - 1; i++) {
+            int loc = i - 1;
             int newItem = A[i];
-            while (loc >= 0 && newItem < A[loc]){
+            while (loc >= 0 && newItem < A[loc]) {
                 A[loc + 1] = A[loc];
                 loc--;
             }

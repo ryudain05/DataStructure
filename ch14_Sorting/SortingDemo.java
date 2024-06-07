@@ -11,8 +11,9 @@ public class SortingDemo {
     static final int SIZE = 10;
 
     public static void main(String[] args) {
-        int[] A = {20, 15, 30, 5, 25, 70, 40, 55, 10, 35};
-        int[] B = new int[SIZE];
+//        int[] A = {20, 15, 30, 5, 25, 70, 40, 55, 10, 35};
+        int[] A = {60, 10, 30, 2, 16, 8, 40, 20};
+        int[] B = new int[8];
 
         //Selection Sorting
         System.out.println("*** Selection Sorting Demo! \n");

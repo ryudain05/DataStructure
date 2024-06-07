@@ -55,6 +55,7 @@ public class AdjListBfsDfs {
         while (!Q.isEmpty()) {
             v = Q.dequeue();
             for (w = head[v]; w != null; w = w.link) {
+                //방문 하지 않았으면 방문 후 큐에 넣기
                 if (visited[w.vertex] == false) {
                     visited[w.vertex] = true;
                     System.out.printf(" %c", w.vertex + 65);

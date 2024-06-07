@@ -38,9 +38,7 @@ public class BinarySearchTree implements IndexInterface<TreeNode> {
     public void prPreOrder(TreeNode tNode) {
         if (tNode != null) {
             System.out.println(tNode.key);
-
             prPreOrder(tNode.left);
-
             prPreOrder(tNode.right);
 
         }
