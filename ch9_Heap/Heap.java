@@ -74,7 +74,7 @@ public class Heap<E extends Comparable> implements PQInterface<E> {
     // [알고리즘 8-4] 구현: 힙 만들기
     public void buildHeap() {
         if (numItems >= 2) {
-            for (int i = (numItems - 2); i >= 0; i--) {
+            for (int i = (numItems - 2) / 2; i >= 0; i--) {
                 percolateDown(i);
             }
         }

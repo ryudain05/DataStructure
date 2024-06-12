@@ -22,11 +22,12 @@ public class TreeDemo {
 //        System.out.printf("\n Postorder : ");
 //        T.postorder(n1);
 
+        TreeNode n9 = T.makeBT(null, 'I', null);
         TreeNode n8 = T.makeBT(null, 'H', null);
         TreeNode n7 = T.makeBT(null, 'G', null);
-        TreeNode n6 = T.makeBT(null, 'F', n8);
-        TreeNode n5 = T.makeBT(n7, 'E', null);
-        TreeNode n4 = T.makeBT(null, 'D', null);
+        TreeNode n6 = T.makeBT(n9, 'F', null);
+        TreeNode n5 = T.makeBT(null, 'E', n8);
+        TreeNode n4 = T.makeBT(null, 'D', n7);
         TreeNode n3 = T.makeBT(n6, 'C', null);
         TreeNode n2 = T.makeBT(n4, 'B', n5);
         TreeNode n1 = T.makeBT(n2, 'A', n3); //얘가 rootNode
